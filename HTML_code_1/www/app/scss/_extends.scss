@@ -1,0 +1,26 @@
+%container {
+  width: 80%;
+  padding: 0 10%;
+}
+
+%flexDisplay {
+  display: flex;
+  justify-content: space-between;
+}
+
+%heading-with-line {
+    color: #000;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 3px;
+      background-color: $mainColor;
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+
+  }
+}
